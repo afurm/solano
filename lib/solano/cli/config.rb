@@ -197,7 +197,7 @@ module Solano
     end
 
     def solano_file_name(scope=:repo, kind='', root=nil)
-      ext = (@host == 'api.tddium.com' || @host == 'ci.solanolabs.com') ? '' : ".#{@host}"
+      ext = (@host == 'ci.predix.io') ? '' : ".#{@host}"
 
       case scope
       when :repo
