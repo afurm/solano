@@ -13,12 +13,9 @@ tool_config:
   gcc:
     version: '4.8'
 test_pattern:
-  - features/*.feature
   - spec/**_spec.rb
 test_exclude_pattern:
   - spec/agent_spec.rb
-tests:
-  - bundle exec rspec spec/agent_spec.rb
 cache:
   per_profile: true
   key_paths:
